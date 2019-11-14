@@ -1,0 +1,18 @@
+{
+    "name": "Laravel + Vue PWA",
+    "short_name": "LaravelPWA",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/img/logo-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/logo-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
