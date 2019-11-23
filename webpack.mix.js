@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,4 +13,11 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css')
+   .webpackConfig({
+      plugins: [
+         new WorkboxPlugin.InjectManifest({
+            swSrc: './public/service-worker.js',
+         })
+      ]
+   });
