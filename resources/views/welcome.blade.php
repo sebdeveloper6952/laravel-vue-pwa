@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#317EFB"/>
 
         <title>Laravel + Vue PWA</title>
 
         <!-- Manifest -->
         <link href="/manifest.json" rel="manifest">
+
+        <link rel="apple-touch-icon" href="img/logo-192x192.png">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -40,6 +43,9 @@
         </style>
     </head>
     <body>
+        <noscript>
+            <p>Javascript is required.</p>
+        </noscript>
         <div id="app" class="flex-center position-ref full-height">
             <example-component />
         </div>

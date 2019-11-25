@@ -3,6 +3,8 @@
     "short_name": "LaravelPWA",
     "start_url": "/",
     "display": "standalone",
+    "theme_color": "#317EFB",
+    "background_color": "#317EFB",
     "icons": [
         {
             "src": "/img/logo-192x192.png",

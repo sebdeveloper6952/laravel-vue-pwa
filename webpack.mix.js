@@ -13,11 +13,6 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .webpackConfig({
-      plugins: [
-         new WorkboxPlugin.InjectManifest({
-            swSrc: './public/service-worker.js',
-         })
-      ]
-   });
+    .sass('resources/sass/app.scss', 'public/css')
+    .copyDirectory('resources/img', 'public/img')
+    .copy('resources/js/service-worker.js', 'public/service-worker.js');
